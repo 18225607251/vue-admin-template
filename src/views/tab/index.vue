@@ -32,6 +32,7 @@ export default {
   },
   watch: {
     activeName(val) {
+      console.log(val)
       this.$router.push(`${this.$route.path}?tab=${val}`)
     }
   },
